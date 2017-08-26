@@ -2,8 +2,6 @@ package com.dimanemets.playground.libsplayground;
 
 import android.app.Application;
 
-import com.dimanemets.playground.libsplayground.component.ApplicationComponent;
-import com.dimanemets.playground.libsplayground.component.DaggerApplicationComponent;
 
 /**
  * Created by dimanemets on 19/08/2017.

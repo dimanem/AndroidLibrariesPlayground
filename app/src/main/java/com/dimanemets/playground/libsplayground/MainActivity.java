@@ -12,16 +12,16 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.dimanemets.playground.libsplayground.api.GithubService;
+import com.dimanemets.playground.libsplayground.api.GithubUser;
+import com.dimanemets.playground.libsplayground.presenter.UserPresenter;
+import com.dimanemets.playground.libsplayground.view.UserView;
+
 import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import dima.dagger2tut1.R;
-
-import com.dimanemets.playground.libsplayground.api.GithubService;
-import com.dimanemets.playground.libsplayground.api.GithubUser;
-import com.dimanemets.playground.libsplayground.presenter.UserPresenter;
-import com.dimanemets.playground.libsplayground.view.UserView;
 
 
 public class MainActivity extends AppCompatActivity implements UserView {

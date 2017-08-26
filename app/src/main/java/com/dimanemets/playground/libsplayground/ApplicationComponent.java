@@ -1,4 +1,4 @@
-package com.dimanemets.playground.libsplayground.component;
+package com.dimanemets.playground.libsplayground;
 
 import javax.inject.Singleton;
 

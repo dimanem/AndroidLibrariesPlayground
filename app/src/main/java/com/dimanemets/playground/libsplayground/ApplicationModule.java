@@ -4,8 +4,6 @@ import android.app.Application;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-import javax.inject.Singleton;
-
 import dagger.Module;
 import dagger.Provides;
 
@@ -22,13 +20,11 @@ public class ApplicationModule {
         this.application = application;
     }
 
-    @Singleton
     @Provides
     Application provideApplication() {
         return application;
     }
 
-    @Singleton
     @Provides
     SharedPreferences provideSharedPrefs() {
         return PreferenceManager.getDefaultSharedPreferences(application);
