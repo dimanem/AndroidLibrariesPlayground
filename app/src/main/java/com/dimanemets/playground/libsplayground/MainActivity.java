@@ -59,7 +59,8 @@ public class MainActivity extends AppCompatActivity implements UserView {
             }
         });
 
-        userPresenter = new UserPresenter(sharedPreferences, service, this);
+        userPresenter = new UserPresenter(sharedPreferences, service);
+        userPresenter.setUserView(this);
     }
 
     @Override

@@ -1,8 +1,10 @@
-package com.dimanemets.playground.libsplayground;
+package com.dimanemets.playground.libsplayground.module;
 
 import android.app.Application;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+
+import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
@@ -25,6 +27,9 @@ public class ApplicationModule {
         return application;
     }
 
+    // This makes sure only ONE instance of SharedPreferences is
+    // created
+    @Singleton
     @Provides
     SharedPreferences provideSharedPrefs() {
         return PreferenceManager.getDefaultSharedPreferences(application);

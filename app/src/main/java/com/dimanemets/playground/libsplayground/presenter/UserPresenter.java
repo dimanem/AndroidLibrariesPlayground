@@ -28,11 +28,16 @@ public class UserPresenter {
 
     private CompositeSubscription subscriptions;
 
-    public UserPresenter(SharedPreferences sharedPreferences, GithubService githubService, UserView userView) {
+    // Constructor injections
+    public UserPresenter(SharedPreferences sharedPreferences, GithubService githubService) {
         this.sharedPreferences = sharedPreferences;
         this.githubService = githubService;
-        this.userView = userView;
         this.subscriptions = new CompositeSubscription();
+    }
+
+    // Method injection
+    public void setUserView(UserView userView) {
+        this.userView = userView;
     }
 
     public void loadUser(final String userName) {

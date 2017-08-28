@@ -1,4 +1,4 @@
-package com.dimanemets.playground.libsplayground;
+package com.dimanemets.playground.libsplayground.module;
 
 import android.app.Application;
 
